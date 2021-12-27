@@ -1,0 +1,104 @@
+Q 1 : For the given JSON iterate over all for loops (for, for in, for of, forEach).
+Ans :
+    -- a.FOR->
+
+     var obj = [ { person: "ashish", age: "22", city: "noida" }, { fname: "chaman", age: "13", city: "Goa" }, { fname: "raju", age: "87", city: "lucknow"}]; 
+     for(i=0;i<obj.length;i++){
+     console.log(obj[i].fname)
+     console.log(obj[i].age)
+     console.log(obj[i].city)
+}
+
+     -- b. for in->
+
+           for(i=0;i<obj.length;i++){
+           for(var ashish in obj[i]){
+           console.log(`${ashish}: ${obj[i][ashish]}`);
+           }
+           }
+
+      -- c. for of->
+
+            for(var elements of obj){
+            console.log(elements.fname)
+            console.log(elements.age)
+            console.log(elements.city)  
+            }
+
+      --d . for each->
+ 
+            obj.forEach(function(objects){
+            console.log(objects.fname)
+            console.log(objects.age)
+            console.log(objects.city)
+            })
+
+
+
+Q 2 : RESUME IN JSON FORMAT->
+Ans :
+{ 
+ "basics": { 
+ "name": "ashishkhatri", 
+ "email": "ashish88@gmail.com", 
+ "phone": "9265551776", 
+ "date of birth": "05-10-1999", 
+ "nationality": "INDIAN", 
+ "url": "https://ashishkhatri.com", 
+ "summary": "A summary of ashishkhatri", 
+ "location": { 
+ "address": "gautam budh nagar", 
+ "postalCode": "201000", 
+ "city": "noida", 
+ "countryCode": "IND", 
+  
+  
+ }, 
+ "objective": "A objective of ashish khatri", 
+ "carrer objective": { 
+ "Objective": "to make myskills for devolpment  of organization and myself " 
+ }, 
+ "INTERNSHIP": [{ 
+ "name": "full stack web developer", 
+ "url": "https://web.com", 
+ "startDate": "2021-12-23", 
+ "endDate": "2022-01-31", 
+ "summary": "Description…", 
+ "highlights": [
+ "done internship" 
+ ] 
+ }], 
+ "education": [{ 
+ "institution": "amity university",  "url": "https://amity.edu/", 
+ "area": "UP", 
+ "studyType": "Bachelor", 
+ "startDate": "2017-05-11", 
+ "endDate": "2020-07-22", 
+ "score": "",8.2 
+ "courses": [ 
+ "Bachelor in computer application - BCA" 
+ ] 
+ }], 
+ "12th standard": [{ 
+ "college": "KVS Nagrota",  "url": "https://kvsnagrota.com/", 
+ "area": "nagrota", 
+ "year": "2016-2017", 
+ "percentage": "78" 
+ }], 
+ "10th standard": [{ 
+ "school": "Army public school bolarum", 
+ "url": "https://APSB.com/", 
+ "area": "secuendrabad", 
+ "year": "2014-2015", 
+ "score": "9.2"
+ }], 
+  "languages known": [{ 
+ "language": "English", 
+ "fluency": "Native speaker" 
+ "language": "hindi", 
+  }], 
+ "interests": [{ 
+ "name": "playing cricket", 
+ ] 
+ }],
+ } 
